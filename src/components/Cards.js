@@ -19,7 +19,7 @@ class Cards extends React.Component {
     this.handleChangeL = this.handleChangeL.bind(this);
   }
   componentDidMount() {
-    fetch("http://api.icndb.com/jokes/random/")
+    fetch("https://api.icndb.com/jokes/random/")
       .then((response) => {
         return response.json();
       })
@@ -48,7 +48,7 @@ class Cards extends React.Component {
   fetchFirstandLast = (e) => {
     e.preventDefault();
     fetch(
-      `http://api.icndb.com/jokes/random?escape=javascript&firstName=${this.state.firstName}&lastName=${this.state.lastName}`
+      `https://api.icndb.com/jokes/random?escape=javascript&firstName=${this.state.firstName}&lastName=${this.state.lastName}`
     )
       .then((response) => {
         return response.json();
