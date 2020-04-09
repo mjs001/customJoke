@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.card {
+  margin: 0 auto;
+  margin-top: 5%;
+}
