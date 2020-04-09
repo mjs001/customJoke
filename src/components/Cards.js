@@ -8,7 +8,7 @@ import {
   Input,
   Button,
 } from "@smooth-ui/core-sc";
-import axios from "axios";
+
 class Cards extends React.Component {
   constructor() {
     super();
@@ -18,6 +18,7 @@ class Cards extends React.Component {
     this.handleChangeF = this.handleChangeF.bind(this);
     this.handleChangeL = this.handleChangeL.bind(this);
   }
+
   componentDidMount() {
     fetch("https://api.icndb.com/jokes/random/")
       .then((response) => {

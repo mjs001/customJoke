@@ -6,16 +6,18 @@ import Cards from "./components/Cards";
 import { theme } from "@smooth-ui/core-sc";
 import { ThemeProvider } from "styled-components";
 import "./components/styling.css";
+import Button from "./components/Button";
+import useBackgroundColor from "./hooks/useBackgroundColor";
 function App() {
   const theme = {
     colors: {
       primary: "purple",
     },
   };
-
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+        {useBackgroundColor("lightGray")}
         <Normalize />
         <h3>
           Put in your first and last name and click submit and you will be
